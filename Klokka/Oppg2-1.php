@@ -1,9 +1,10 @@
+<?php include("forside.html");?>
 <html>
 <body>
 <form method="post" action="">
 <h3>Oppgave1</h3><br/>
 <h4>Hvor mye er klokken?</h4><br/>
-<img src="klhalv2.png"/><br/>
+<img src="Bilder/klhalv2.png"/><br/>
 <input type="radio" name="svar" value="1"/>Halv 2
 <input type="radio" name="svar" value="2"/>Halv 5
 <input type="radio" name="svar" value="3"/>Halv 8
@@ -35,4 +36,5 @@ if($regsvarknapp)
 
 
 }
+include("slutt.html");
 ?>

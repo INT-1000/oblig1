@@ -1,0 +1,24 @@
+a{
+		border:2px solid black;
+		font-size: 30px;
+		background-color: #A3CCCC;
+		
+
+	}
+
+body{
+	top: 10%;
+	bottom:20%;
+	left: 30%;
+	height: 70%;
+	width: 40%;
+
+	padding:20px;
+	
+	
+	position: absolute;
+
+}
+content{
+
+}

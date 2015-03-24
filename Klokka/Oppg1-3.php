@@ -1,9 +1,11 @@
+
 <html>
+<head><link href="style.css" type="text/css" rel="stylesheet" / ></head>
 <body>
 <form method="post" action="">
 <h3>Oppgave3</h3><br/>
 <h4>Hvor mye er klokken?</h4><br/>
-<img src="kl4.png"><br/>
+<img src="Bilder/kl4.png"><br/>
 <input type="radio" name="svar" value="1"/>6
 <input type="radio" name="svar" value="2"/>2
 <input type="radio" name="svar" value="3"/>4
@@ -35,4 +37,5 @@ if($regsvarknapp)
 
 
 }
+include("slutt.html");
 ?>

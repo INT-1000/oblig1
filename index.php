@@ -3,8 +3,6 @@
 include("forside.html");
 ?>
 
-<h3>Velkommen til startsiden</h3>
-I menyen til venstre finner du ulike funksjoner
 
 <?php
 include("slutt.html");

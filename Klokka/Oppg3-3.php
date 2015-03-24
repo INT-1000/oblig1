@@ -1,9 +1,10 @@
+<?php include("forside.html");?>
 <html>
 <body>
 <form method="post" action="">
 <h3>Oppgave 3</h3><br/>
 <h4>Hvor mye er klokken?</h4><br/>
-<img src="kvartpå10.png"/><br/>
+<img src="Bilder/kvartpå10.png"/><br/>
 <input type="radio" name="svar" value="1"/>Kvart på 8
 <input type="radio" name="svar" value="2"/>Kvart på 10
 <input type="radio" name="svar" value="3"/>Kvart på 3
@@ -35,4 +36,5 @@ if($regsvarknapp)
 
 
 }
+include("slutt.html");
 ?>
