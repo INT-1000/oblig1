@@ -1,9 +1,9 @@
 <?php
 session_start();
 ?>
-<form method="post" action="registrering.php"> 
-	Hva heter du? <input type="text" id="brukernavn" name="brukernavn" required /> <br/>
-	<input type="submit" value="Fortsett" name="regnavn" >
+<form method="post" action="crovan1-5.php"> 
+	Hva er størst? 6+3 ? 4+5 <input type="text" id="svar" name="svar" required /> <br/>
+	<input type="submit" value="Fortsett" name="regsvar" >
 </form>
 
 <?php
@@ -11,7 +11,6 @@ session_start();
 
 if($regsvar)
 {
-	$brukernavn=$_POST["brukernavn"];
 	$svar=$_POST["svar"];							//Henter input fra html skjema
 	$poeng=$_SESSION["poeng"];						//setter Session-variabel
 	if($svar==">")									//GIR DEG SVAR PÅ FORRIGE side1.php
