@@ -1,0 +1,16 @@
+CREATE TABLE funksjon(
+oppgave VARCHAR(255)NOT NULL,
+PRIMARY KEY (oppgave)
+);
+CREATE TABLE vanskelighetsgrad(
+niva VARCHAR(255) NOT NULL,
+);
+CREATE TABLE bruker( 
+brukernavn VARCHAR(255)NOT NULL, 
+poeng VARCHAR(255)NOT NULL,  
+PRIMARY KEY (brukernavn), 
+FOREIGN KEY (oppgave) REFERENCES funksjon (oppgave),
+FOREIGN KEY (niva) REFERENCES vanskelighetsgrad (niva)
+);
+
+
