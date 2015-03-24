@@ -1,13 +1,14 @@
+<?php include("forside.html");?>
 <html>
 <body>
 <form method="post" action="">
-<h3>Oppgave 3</h3><br/>
+<h3>Oppgave 4</h3><br/>
 <h4>Hvor mye er klokken?</h4><br/>
-<img src="klhalv5.png"/><br/>
-<input type="radio" name="svar" value="1"/>Halv 2
-<input type="radio" name="svar" value="2"/>Halv 5
+<img src="Bilder/klhalv6.png"/><br/>
+<input type="radio" name="svar" value="1"/>Halv 6
+<input type="radio" name="svar" value="2"/>Halv 3
 <input type="radio" name="svar" value="3"/>Halv 8
-<input type="radio" name="svar" value="4"/>Halv 9<br/>
+<input type="radio" name="svar" value="4"/>Halv 7<br/>
 
 <input type="submit" value="Svar" id="regsvarknapp" name="regsvarknapp"/>
 <input type="reset" value="Nullstill" id="nullstill" name="nullstill"/>
@@ -20,19 +21,20 @@
 if($regsvarknapp)
 {
   $svar=$_POST["svar"];
-  if($svar!=2)
+  if($svar!=1)
   {
-    print("Svaret er dessverre feil, riktig svar er halv 5<br/>");
-    print("<a href='Oppg2-4.php'>Neste oppgave</a>");
+    print("Svaret er dessverre feil, riktig svar er halv 6<br/>");
+    print("<a href='Oppg2-5.php'>Neste oppgave</a>");
     
   }
   else
   {
     print("Garatulerer, du svarte korrekt<br/>");
-    print("<a href='Oppg2-4.php'>Neste oppgave</a>");
+    print("<a href='Oppg2-5.php'>Neste oppgave</a>");
     
   }
 
 
 }
+include("slutt.html");
 ?>

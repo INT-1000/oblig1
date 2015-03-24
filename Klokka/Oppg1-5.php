@@ -1,13 +1,15 @@
+
 <html>
+<head><link href="style.css" type="text/css" rel="stylesheet" / ></head>
 <body>
 <form method="post" action="">
-<h3>Oppgave 2</h3><br/>
+<h3>Oppgave5</h3><br/>
 <h4>Hvor mye er klokken?</h4><br/>
-<img src="kl11.png"><br/>
-<input type="radio" name="svar" value="1"/>5
-<input type="radio" name="svar" value="2"/>12
-<input type="radio" name="svar" value="3"/>3
-<input type="radio" name="svar" value="4"/>11<br/>
+<img src="Bilder/kl7.png"><br/>
+<input type="radio" name="svar" value="1"/>6
+<input type="radio" name="svar" value="2"/>7
+<input type="radio" name="svar" value="3"/>9
+<input type="radio" name="svar" value="4"/>5<br/>
 
 <input type="submit" value="Svar" id="regsvarknapp" name="regsvarknapp"/>
 <input type="reset" value="Nullstill" id="nullstill" name="nullstill"/>
@@ -20,19 +22,20 @@
 if($regsvarknapp)
 {
   $svar=$_POST["svar"];
-  if($svar!=4)
+  if($svar!=2)
   {
-    print("Svaret er dessverre feil, riktig svar er 11<br/>");
-    print("<a href='Oppg1-3.php'>Neste oppgave</a>");
+    print("Svaret er dessverre feil, riktig svar er 7<br/>");
+    
     
   }
   else
   {
     print("Garatulerer, du svarte korrekt<br/>");
-    print("<a href='Oppg1-3.php'>Neste oppgave</a>");
+    
     
   }
 
 
 }
+include("slutt.html");
 ?>
