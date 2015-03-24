@@ -23,6 +23,8 @@ Hvilken av de tallene her er partall? <br />
 <input type="submit" value="Svar" name="regsvar" />
 <input type="reset" value="Nullstill" name="nullstill" />
 
+<a href="/oblig1/parodd/intro.php">Tilbake til oppgave siden</a> <br />
+
 <p id="respons"> </p> <br />		
 
 </form>
@@ -43,6 +45,7 @@ Hvilken av de tallene her er partall? <br />
 			{
 				print("$svar er korrekt <br />");
 				print("Du fikk 1 poeng nå <br />");
+				print("<button onclick='location.href='/opg2.php''>Fortsett</button>");
 			}
 	print("<a href='intro.php'>Tilbake til forsiden</a> <br />");
 		}

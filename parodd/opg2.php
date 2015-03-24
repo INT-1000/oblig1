@@ -23,6 +23,8 @@ Hvilken av de tallene her er oddetall? <br />
 <input type="submit" value="Svar" name="regsvar" />
 <input type="reset" value="Nullstill" name="nullstill" />
 
+<a href="/oblig1/parodd/intro.php">Tilbake til oppgave siden</a> <br />
+
 <p id="respons"> </p> <br />		
 
 </form>

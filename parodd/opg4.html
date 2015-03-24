@@ -11,19 +11,17 @@
 <h3> Partall eller Oddetall? </h3>
 
 <form method="post" action="" name="ParOdd">
-Hvilket tall her er partall? <br />
+Hvilket tall her er Oddetall? <br />
 
 <?php include("tallrekke.html") ?>
 
 <br />
 
-10 <input type="radio" value="10" name="svar" />
-13 <input type="radio" value="13" name="svar"/>
-18 <input type="radio" value="18" name="svar" /> <br />
+9 <input type="radio" value="9" name="svar" />
+20 <input type="radio" value="20" name="svar"/>
+2 <input type="radio" value="2" name="svar" /> <br />
 <input type="submit" value="Svar" name="regsvar" />
 <input type="reset" value="Nullstill" name="nullstill" />
-
-<a href="/oblig1/parodd/intro.php">Tilbake til oppgave siden</a> <br />
 
 <p id="respons"> </p> <br />		
 
@@ -37,7 +35,7 @@ Hvilket tall her er partall? <br />
 		{
 			$svar=$_POST["svar"];
 			
-			if($svar!=18)
+			if($svar!=9)
 			{
 				print("Svaret er feil <br />");
 			}

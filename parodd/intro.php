@@ -1,11 +1,13 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+<title> Oppgave meny </title>
+<meta charset="utf-8">
 </head>
 
 <h4> Velkommen til partall eller oddetall </h4>
 
-<p> I oppgavene her skal du velge om tallene er partall eller Oddetal. For å lære noe mer om partall og oddetal, kan du besøke denne siden <a href="">her</a> </p>
+<p> I oppgavene her skal du velge om tallene er partall eller Oddetal. For å lære noe mer om partall og oddetal, kan du besøke denne siden <a href="http://matte.hiof.no/vrekka/tall/partalloddetall/p-partalloddetall.html">her</a> </p>
 
 
 <body>
