@@ -1,10 +1,11 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<?php include("forside.html"); ?>
+<?php
+	session_start();
+	include("../forside.html"); 
+?>
+
 <title>Oppgave 1 </title>
+
 <meta charset="utf-8">
-</head>
 
 <body>
 
@@ -36,17 +37,22 @@ Hvilken av de tallene her er oddetall? <br />
 	if($regsvar)
 		{
 			$svar=$_POST["svar"];
-			
+			$poeng=$_SESSION["poeng"];
+
 			if($svar!=5)
 			{
 				print("Svaret er feil <br />");
+				print("Du har $poeng stjerner!");
 			}
 			else
 			{
 				print("$svar er korrekt <br />");
-				print("Du fikk 1 poeng nå <br />");
+				$poeng++;
+				$_SESSION["poeng"]=$poeng;
+				print("Du har nå $poeng stjerner! <br />");
 			}
-	print("<a href='intro.php'>Tilbake til forsiden</a> <br />");
+	print("<a href='opg3.php'>Gå til neste oppgave</a> <br />");
+	$poeng=$_SESSION["poeng"];
 		}
 	include("slutt.html");
 ?>
