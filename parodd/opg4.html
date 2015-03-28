@@ -1,8 +1,9 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<?php include("forside.html"); ?>
-<title>Oppgave 1 </title>
+<?php 
+	session_start();
+	include("forside.html"); 
+?>
+
+<title>Oppgave 1</title>
 <meta charset="utf-8">
 </head>
 
@@ -34,17 +35,21 @@ Hvilket tall her er Oddetall? <br />
 	if($regsvar)
 		{
 			$svar=$_POST["svar"];
-			
+			$_SESSION["poeng"];
+
 			if($svar!=9)
 			{
 				print("Svaret er feil <br />");
 			}
 			else
 			{
+				$poeng++
+				$_SESSION["poeng"]=$poeng
 				print("$svar er korrekt <br />");
-				print("Du fikk 1 poeng nå <br />");
+				print("Du har nå $poeng stjerner<br />");
 			}
-	print("<a href='intro.php'>Tilbake til forsiden</a> <br />");
+				print("<a href='intro.php'>Gå tilbake til oppgavesiden</a> <br />");
+				$poeng=$_SESSION["poeng"];
 		}
 	include("slutt.html");
 ?>

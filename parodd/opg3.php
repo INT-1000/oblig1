@@ -1,10 +1,10 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<?php include("forside.html"); ?>
-<title>Oppgave 1 </title>
+<?php 
+	session_start();
+	include("forside.html"); 
+?>
+
+<title>Oppgave 1</title>
 <meta charset="utf-8">
-</head>
 
 <body>
 
@@ -23,8 +23,6 @@ Hvilket tall her er partall? <br />
 <input type="submit" value="Svar" name="regsvar" />
 <input type="reset" value="Nullstill" name="nullstill" />
 
-<a href="/oblig1/parodd/intro.php">Tilbake til oppgave siden</a> <br />
-
 <p id="respons"> </p> <br />		
 
 </form>
@@ -36,17 +34,23 @@ Hvilket tall her er partall? <br />
 	if($regsvar)
 		{
 			$svar=$_POST["svar"];
-			
+			$_SESSION["poeng"];
+
 			if($svar!=18)
 			{
 				print("Svaret er feil <br />");
+				print("Du har $poeng stjerner");
 			}
 			else
 			{
+				$poeng++;
+				$_SESSION["poeng"]=$poeng;
 				print("$svar er korrekt <br />");
-				print("Du fikk 1 poeng nå <br />");
+				print("Du har nå $poeng stjerner! <br />");
 			}
-	print("<a href='intro.php'>Tilbake til forsiden</a> <br />");
+
+				print("<a href='opg4.php'>Gå til neste oppgave</a> <br />");
+				$poeng=$_SESSION["poeng"];
 		}
 	include("slutt.html");
 ?>
