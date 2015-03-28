@@ -45,12 +45,30 @@ Hvilken av de tallene her er oddetall? <br />
 			}
 			else
 			{	
+			$poeng=$_SESSION["poeng"];
+
+			if($svar!=5)
+			{
+				print("Svaret er feil <br />");
+				print("Du har $poeng stjerner!");
+			
+			if($svar!=5)
+			{
+				print("Svaret er feil <br />");
+			}
+			else
+			{
+				print("$svar er korrekt <br />");
 				$poeng++;
 				$_SESSION["poeng"]=$poeng;
 				print("Du har nå $poeng stjerner! <br />");
 			}
 	print("<a href='opg3.php'>Gå til neste oppgave</a> <br />");
 	$poeng=$_SESSION["poeng"];
+
+				print("Du fikk 1 poeng nå <br />");
+			}
+	print("<a href='intro.php'>Tilbake til forsiden</a> <br />");
 		}
 	include("slutt.html");
 ?>
