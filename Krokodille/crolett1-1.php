@@ -1,5 +1,14 @@
 <?php
-session_start();
+	session_start();
+	@$innloggetBruker=$_SESSION["brukernavn"];
+
+	if(!$innloggetBruker)
+	{
+		print("Denne siden krever innlogging <br />");
+	}
+	else
+	{
+		include("cronivavelger.php");
 ?>
 <form method="post" action="crolett1-2.php"> 
 	Hva er størst? 1?2 <input type="text" id="svar" name="svar" required /> <br/>
@@ -28,5 +37,6 @@ if($regsvar)
 	}
 print ("<a href='avslutt.php'>Nullstill alt</a><br/>");
 $poeng=$_SESSION["poeng"];
+}
 }
 ?>

@@ -1,42 +1,61 @@
+<?php include("logo.html");
+ ?>
 <?php
-session_start();
-?>
-<form method="post" action="crolett1-6.php"> 
-	Hva heter du? <input type="text" id="brukernavn" name="brukernavn" required /> <br/>
-	<input type="submit" value="Fortsett" name="regnavn" >
-</form>
+	session_start();
+	@$innloggetBruker=$_SESSION["brukernavn"];
 
-<?php
-@$regnavn=$_POST["regnavn"];
-$poeng=$_SESSION["poeng"];
-if($regnavn)
-{
-	$brukernavn=$_POST["brukernavn"];
-
-	if(!$brukernavn)
+	if(!$innloggetBruker)
 	{
-		print("Du må fylle ut et navn");
+		print("Denne siden krever innlogging <br />");
 	}
 	else
 	{
-		include("dbcon.php");
-		$sqlSetning="SELECT * FROM oppgave WHERE brukernavn='$brukernavn';";
-		$sqlResultat=mysqli_query($dbcon,$sqlSetning) or die ("Ikke mulig å hente fra Databasen");
-		$antallRader=mysqli_num_rows($sqlResultat);
+		
+		?>
+<html>
+<head><link href="style.css" type="text/css" rel="stylesheet" / ></head>
+<body>
+<div class="pinnhold">
+<form method="post" action="registrering.php"> 
+	<input type="submit" value="Fortsett" name="regnavn" >
+</form>
+</div>
+</body>
+</html>
+<?php
+@$regsvar=$_POST["regsvar"];
 
-		if($antallRader!=0)
-		{
-			print("Navnet er registrert fra før");
-		}
-
-		else
-		{
-			$sqlSetning="INSERT INTO bruker (brukernavn) VALUES ('$brukernavn');";
-			mysqli_query($dbcon,$sqlSetning) or die ("kan ikke registrere data i databasen");
-			Print("Du er nå registrert med Navn: $navn og poengsumm: $poeng")
-		}
+if($regsvar)
+{
+	$svar=$_POST["svar"];							//Henter input fra html skjema
+	$poeng=$_SESSION["poeng"];						//setter Session-variabel
+	if($svar=="<")									//GIR DEG SVAR PÅ FORRIGE side1.php
+	{
+		print("<div id='svar'>");
+		print("$svar er korrekt<br/>");				
+		$poeng++;									//øker poeng med 1
+		$_SESSION["poeng"]=$poeng;					//Lagrer Session variabel etter endring
+		print("du har $poeng poeng!<br/>");	
+		print("</div>");		//sier hvor mange poeng du har
 	}
-print ("<a href='avslutt.php'>Nullstill alt</a><br/>");
+
+	else 											
+	{
+		print("<div id='svar'>");
+		print("$svar er feil. < er riktig<br/>");	//Sier hva du svarte og hva som var korrekt
+		print("du har $poeng poeng!<br/>");
+		print("</div>");		
+	}
+
+if($poeng==<)
+	{
+		print("spill av lyd");
+		$link = "C:\\MAMP\\htdocs\\session\\lett\\applause.mp3"; 
+        $audio = "<embed src='".$link."' hidden='true'>"; 
+        echo $audio;
+    }
+
 $poeng=$_SESSION["poeng"];
+}
 }
 ?>
