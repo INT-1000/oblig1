@@ -1,24 +1,202 @@
-a{
-		border:2px solid black;
-		font-size: 30px;
-		background-color: #A3CCCC;
-		
-
-	}
+html{
+	margin: 0;
+	padding: 0;
+    height:100%;
+}
 
 body{
-	top: 10%;
+	background-image: url('Bilder/bakgrunninf1.png');
+    background-position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    overflow: hidden;
+    
+}
+article{
+	top: 70%;
+	bottom:20%;
+	left: 35%;
+	height: 70%;
+	width: 40%;
+
+	padding:20px;
+	position: absolute;
+}
+
+footer{
+	padding: 15px;
+	top: 90%;
+    clear:both;
+    text-align: center;
+    width:100%;
+    position: absolute;
+}
+
+
+.innholdfram{
+	top: 29%;
+	bottom:20%;
+	left: 30%;
+	height: 50%;
+	width: 40%;
+
+	padding:20px;
+	position: absolute;
+	text-align: center;
+
+}
+.innhold{
+	top: 27%;
+	bottom:20%;
+	left: 35%;
+	height: 70%;
+	width: 40%;
+
+	padding:20px;
+	position: absolute;
+
+
+
+}
+
+.pinnhold{
+	top: 32%;
+	bottom:20%;
+	left: 35%;
+	height: 70%;
+	width: 40%;
+
+	padding:20px;
+	position: absolute;
+}
+
+#logginn{
+	top: 50%;
+	bottom:20%;
+	left: 30%;
+	height: 50%;
+	width: 40%;
+
+	padding:20px;
+	position: absolute;
+	text-align: center;
+}
+
+#logginn a{
+	display: inline;
+    
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #00CC00;
+    width: 120px;
+    text-align: center;
+    
+    text-decoration: none;
+    font-size:13px;
+}
+#logo{
+	top: 6%;
+	color: green;
+	font-weight: bold;
+	position: absolute;
+	width: 650px;
+	left: 33%;
+	text-align: center;
+	font-size: 30px;
+	font-style: italic;
+
+}
+
+#meny{
+	top: 20%;
+	left: 32%;
+	position: absolute;
+}
+
+
+
+.niva{
+	top: 30%;
+	bottom:20%;
+	left: 42%;
+	height: 70%;
+	width: 40%;
+
+	padding:20px;
+	position: absolute;
+}
+
+#svar{
+	top: 80%;
+	left: 36%;
+	position: absolute;
+	font-size: 30px;
+}
+
+li{
+	display: inline;
+
+	padding: 20px;
+	margin: 10px;
+	outline: 5px solid #0099FF;
+	text-align: center;
+	background-color: #99CCFF;
+	
+}
+
+
+
+a:link, a:visited {
+	
+	
+	display: inline;
+    
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #00CC00;
+    width: 120px;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    font-size:30px;
+
+} 
+a:hover, a:active {
+    background-color: #47D147;
+}
+
+
+#logo a{
+	font-size: 60px;
+	color: green;
+	text-decoration: none;
+	background-color: inherit;
+}
+#svarrute{
+	
+	top: 5%;
+	position: absolute;
+}
+#container{
+	top: 27%;
 	bottom:20%;
 	left: 30%;
 	height: 70%;
 	width: 40%;
 
 	padding:20px;
-	
-	
 	position: absolute;
 
 }
-content{
+#forklaring{
+	top: 35%;
+	bottom:20%;
+	left: 30%;
+	height: 50%;
+	width: 40%;
 
+	padding:20px;
+	position: absolute;
+	text-align: center;
 }

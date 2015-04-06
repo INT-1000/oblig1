@@ -1,0 +1,56 @@
+CREATE TABLE funksjon(
+oppgave VARCHAR(255)NOT NULL,
+PRIMARY KEY (oppgave)
+);
+CREATE TABLE vanskelighetsgrad(
+niva VARCHAR(255) NOT NULL,
+);
+CREATE TABLE bruker( 
+brukernavn VARCHAR(255)NOT NULL, 
+poeng VARCHAR(255)NOT NULL,  
+PRIMARY KEY (brukernavn), 
+FOREIGN KEY (oppgave) REFERENCES funksjon (oppgave),
+FOREIGN KEY (niva) REFERENCES vanskelighetsgrad (niva)
+);
+
+
+VERSJON 2:
+
+CREATE TABLE funksjon(
+oppgave VARCHAR(255)NOT NULL,
+niva VARCHAR(255)NOT NULL,
+PRIMARY KEY (oppgave)
+);
+
+CREATE TABLE bruker() ENGINE=INNODB;(
+brukernavn VARCHAR(255)NOT NULL,
+poeng VARCHAR(255)NOT NULL,
+oppgave VARCHAR(255)NOT NULL,
+niva VARCHAR(255)NOT NULL,
+PRIMARY KEY (brukernavn),
+FOREIGN KEY (oppgave) REFERENCES funksjon(oppgave),
+FOREIGN KEY (niva) REFERENCES funksjon(niva)
+);
+
+
+VERSJON 3:
+
+CREATE TABLE bruker( 
+brukernavn VARCHAR(255)NOT NULL, 
+passord VARCHAR(255)NOT NULL,
+poeng INT(255)NOT NULL,
+PRIMARY KEY (brukernavn)
+); 
+
+
+VERSJON 4:
+
+
+CREATE TABLE bruker( 
+brukernavn VARCHAR(255)NOT NULL, 
+passord VARCHAR(255)NOT NULL,
+poeng INT(255)NULL,
+PRIMARY KEY (brukernavn)
+); 
+
+

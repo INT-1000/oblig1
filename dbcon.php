@@ -1,8 +1,8 @@
 <?php
 $host="localhost";
-$user="root";
-$password="root";
-$db="session";
+$user="134950";
+$password="94161";
+$db="134950";
+$dbcon=mysqli_connect($host,$user,$password,$db) or die("Ikke kontakt med DB server");
 
-$dbcon=mysqli_connect($host,$user,$password,$db) or die ("Ikke kontakt med DB server");
 ?>

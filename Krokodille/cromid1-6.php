@@ -1,5 +1,14 @@
 <?php
-session_start();
+	session_start();
+	@$innloggetBruker=$_SESSION["brukernavn"];
+
+	if(!$innloggetBruker)
+	{
+		print("Denne siden krever innlogging <br />");
+	}
+	else
+	{
+		include("cronivavelger.php");
 ?>
 <form method="post" action="registrering.php"> 
 	Hva heter du? <input type="text" id="brukernavn" name="brukernavn" required /> <br/>
@@ -29,5 +38,6 @@ if($regsvar)
 	}
 print ("<a href='avslutt.php'>Nullstill alt</a><br/>");
 $poeng=$_SESSION["poeng"];
+}
 }
 ?>
