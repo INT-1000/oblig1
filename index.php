@@ -5,7 +5,7 @@
 <title>Forside</title>
 <meta charset="utf-8">
 <html lang="no">
-<meta name="viewport" content="width-device-width, initial-scale=1.0, user-scalable=yes"> /
+<meta name="viewport" content="width-device-width, initial-scale=1.0, user-scalable=yes">
 <link href="style.css" type="text/css" rel="stylesheet" / >
 </head>
 
@@ -16,7 +16,6 @@
 </div>
 <div class="innholdfram">
 <h1>E-læring i matematikk</h1>
-<h2>Velkommen til e-læring i matematikk, du skal i denne applikasjonen hjelpe stjernen stein i å finne kaker til bursdagsselskapet sitt. Vennligst logg in for utnyttelse av applikasjonen</h2><br/>
 
 </div>
 <div id="logginn">
@@ -26,6 +25,8 @@ Passord: <input type="password" id="passord" name="passord"> <br />
 <input type="submit" value="Logg Inn" name="login">
 <input type="reset" value="Nullstill" name="reset"> <br />
 </form>
+
+<h2>Velkommen til e-læring i matematikk. Du skal i denne applikasjonen hjelpe Kakus Mattimus i å finne kaker til bursdagsselskapet sitt. Vennligst logg in for utnyttelse av applikasjonen</h2><br/>
 
 Ny Bruker?
 <a href="regbru.php">Registerer her</a> <br />

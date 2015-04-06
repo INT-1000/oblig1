@@ -20,12 +20,6 @@
 <div id="logo">
 <a href="forside.html">KAKUS MATTIMUS</a>
 
-<?php
-//print("fungerer dette?");
-@$poeng=$_SESSION["poeng"];
-unset($_SESSION["poeng"]); 
-?>
-
 </div>
 
 <div id="meny">
@@ -33,7 +27,7 @@ unset($_SESSION["poeng"]);
 <a href="KNivavelger.php">Klokken</a>
 <a href="pnivavelger.php">Pluss og minus</a>
 <a href="cronivavelger.php">Krokodilletegn</a>
-<a href="dnd.php">Drag & Drop</a>
+<a href="dnd.php">Tallrekkefølge</a>
 
 </div>
 </body>

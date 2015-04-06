@@ -44,14 +44,11 @@ if($regnavn)
 
 		else
 		{
-	//		$sqlSetning="INSERT INTO bruker(brukernavn,poeng) VALUES ('$brukernavn','$poeng');";
-	//		mysqli_query($dbcon,$sqlSetning) or die ("kan ikke registrere bruker i databasen");
-
-			$sqlSetning="UPDATE bruker SET poeng= +'1' WHERE brukernavn='$brukernavn' AND poeng='$poeng' ;";
-			mysqli_query($dbcon,$sqlSetning) or die ("kan ikke registrere poeng i databasen");
+			$sqlSetning="UPDATE bruker SET poeng = poeng+1 WHERE $poeng>='4';";		
+			mysqli_query($dbcon,$sqlSetning) or die(mysqli_error($dbcon));
 
 			print("<div id='svar'>");
-			Print("<br/> <br/>Du er nå registrert med Navn: $brukernavn og poengsumm: $poeng");
+			Print("<br/> <br/>Du er nå registrert med Navn: $brukernavn og poengsum: $poeng");
 			print("</div>");
 		}
 	}
