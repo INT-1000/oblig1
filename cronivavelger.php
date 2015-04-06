@@ -8,7 +8,8 @@
 </head>
 <body>
 <div id="forklaring">
-<h1> du skal skrive =,< eller > inne i boksen</h1><br/>
+<h1> Du skal skrive =,< eller > inne i boksen</h1><br/>
+<p> Kakus Mattimus trenger hjelp for å finne hva som er størst,<br/>så han kan få kake fra hr. Crokus</p><br/>
 </div>
 
 <div class="niva">

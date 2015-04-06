@@ -16,8 +16,9 @@
 </div>
 <div class="innholdfram">
 <h1>E-læring i matematikk</h1>
-
+<h2>Velkommen til e-læring i matematikk. Du skal i denne applikasjonen hjelpe Kakus Mattimus i å finne kaker til bursdagsselskapet sitt. Vennligst logg in for utnyttelse av applikasjonen</h2><br/>
 </div>
+
 <div id="logginn">
 <form method="post" action="" name="loginSkjema" id="loginSkjema">
 Brukernavn: <input type="text" id="brukernavn" name="brukernavn"> <br />
@@ -25,8 +26,6 @@ Passord: <input type="password" id="passord" name="passord"> <br />
 <input type="submit" value="Logg Inn" name="login">
 <input type="reset" value="Nullstill" name="reset"> <br />
 </form>
-
-<h2>Velkommen til e-læring i matematikk. Du skal i denne applikasjonen hjelpe Kakus Mattimus i å finne kaker til bursdagsselskapet sitt. Vennligst logg in for utnyttelse av applikasjonen</h2><br/>
 
 Ny Bruker?
 <a href="regbru.php">Registerer her</a> <br />

@@ -55,7 +55,6 @@ if($regsvar)
     print("</div>");  
   }
 
-$poeng=$_SESSION["poeng"];
 }
 }
 ?>

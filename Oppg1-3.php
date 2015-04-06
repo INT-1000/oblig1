@@ -54,8 +54,6 @@ if($regsvar)
     print("du har $poeng poeng!<br/>"); 
     print("</div>");  
   }
-
-$poeng=$_SESSION["poeng"];
 }
 }
 ?>

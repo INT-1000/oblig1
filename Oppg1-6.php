@@ -57,7 +57,6 @@ if($poeng>=4)
     	echo $audio;
     }
 
-$poeng=$_SESSION["poeng"];
 }
 }
 ?>
