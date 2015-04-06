@@ -113,7 +113,11 @@ footer{
 	left: 32%;
 	position: absolute;
 }
-
+#menyforside{
+	top: 20%;
+	left: 24%;
+	position: absolute;
+}
 
 
 .niva{

@@ -53,4 +53,10 @@ poeng INT(255)NULL,
 PRIMARY KEY (brukernavn)
 ); 
 
-
+VERSJON 5:
+CREATE TABLE bruker( 
+brukernavn VARCHAR(255)NOT NULL, 
+passord VARCHAR(255)NOT NULL,
+poeng INT(255) DEFAULT '0',
+PRIMARY KEY (brukernavn)
+);
